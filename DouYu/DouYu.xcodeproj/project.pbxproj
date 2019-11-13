@@ -15,6 +15,7 @@
 		CF2C3AAB237463D700007CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2C3AA9237463D700007CD9 /* LaunchScreen.storyboard */; };
 		CF2C3AB6237463D700007CD9 /* DouYuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AB5237463D700007CD9 /* DouYuTests.swift */; };
 		CF2C3AC1237463D700007CD9 /* DouYuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2C3AC0237463D700007CD9 /* DouYuUITests.swift */; };
+		CF2C3AE1237C3A7300007CD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2C3AE0237C3A7300007CD9 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CF2C3ABC237463D700007CD9 /* DouYuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouYuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2C3AC0237463D700007CD9 /* DouYuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouYuUITests.swift; sourceTree = "<group>"; };
 		CF2C3AC2237463D700007CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2C3AE0237C3A7300007CD9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		CF2C3A9D237463D400007CD9 /* DouYu */ = {
 			isa = PBXGroup;
 			children = (
+				CF2C3ACE237C37C200007CD9 /* Classes */,
 				CF2C3A9E237463D400007CD9 /* AppDelegate.swift */,
 				CF2C3AA0237463D400007CD9 /* SceneDelegate.swift */,
 				CF2C3AA2237463D400007CD9 /* ContentView.swift */,
@@ -134,6 +137,62 @@
 				CF2C3AC2237463D700007CD9 /* Info.plist */,
 			);
 			path = DouYuUITests;
+			sourceTree = "<group>";
+		};
+		CF2C3ACE237C37C200007CD9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CF2C3ADF237C394700007CD9 /* Main */,
+				CF2C3ADA237C38A500007CD9 /* Home */,
+				CF2C3ADB237C38A800007CD9 /* Live */,
+				CF2C3ADC237C38AC00007CD9 /* Follow */,
+				CF2C3ADD237C38AF00007CD9 /* Profile */,
+				CF2C3ADE237C390E00007CD9 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CF2C3ADA237C38A500007CD9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CF2C3ADB237C38A800007CD9 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		CF2C3ADC237C38AC00007CD9 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		CF2C3ADD237C38AF00007CD9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CF2C3ADE237C390E00007CD9 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		CF2C3ADF237C394700007CD9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CF2C3AE0237C3A7300007CD9 /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +302,7 @@
 				CF2C3AAB237463D700007CD9 /* LaunchScreen.storyboard in Resources */,
 				CF2C3AA8237463D700007CD9 /* Preview Assets.xcassets in Resources */,
 				CF2C3AA5237463D700007CD9 /* Assets.xcassets in Resources */,
+				CF2C3AE1237C3A7300007CD9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +498,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DouYu/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DouYu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,7 +506,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kktank.DouYu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -457,6 +518,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DouYu/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DouYu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,7 +526,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kktank.DouYu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
